@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-mountain_sakura = { path = "/home/nakernarolino/RustroverProjects/mountain_sakura" }
+mountain_sakura = { git = "https://github.com/NaKeRNarolino/mountain_sakura.git" }

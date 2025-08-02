@@ -166,6 +166,7 @@ dependencies = [
 [[package]]
 name = "mountain_sakura"
 version = "0.1.0"
+source = "git+https://github.com/NaKeRNarolino/mountain_sakura.git#2437e96add6afd43f2652736d3e94dc71ec63563"
 dependencies = [
  "anyhow",
  "colored",
