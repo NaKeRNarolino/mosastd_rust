@@ -1,0 +1,12 @@
+use native fn fromStrNative#"@std:num~>fromStr";
+use native fn toStrNative#"@std:num~>toStr";
+
+exp layout Num { } mix @ {
+    fn fromStr(s: str) -> num {
+        fromStrNative(s)
+    }
+
+    fn toStr(n: num) -> str {
+        toStrNative(n)
+    }
+}

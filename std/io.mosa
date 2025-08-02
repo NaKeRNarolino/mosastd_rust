@@ -1,0 +1,17 @@
+use native fn printLnNative#"@std~>printLn";
+use native fn printNative#"@std~>print";
+use native fn readLineNative#"@std~>readLn";
+
+exp layout IO { } mix @ {
+    fn printLn(s: str) -> {
+        printLnNative(s);
+    }
+
+    fn print(s: str) -> {
+        printNative(s);
+    }
+
+    fn readLn() -> str {
+        readLineNative()
+    }
+}

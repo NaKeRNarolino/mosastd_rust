@@ -1,0 +1,26 @@
+use @std:io~>IO;
+use @std:num~>Num;
+
+IO->printLn("Enter the operation (+, -, *, /):");
+let operation = IO->readLn();
+IO->printLn("Enter the first number:");
+let first_input = Num->fromStr(IO->readLn());
+IO->printLn("Enter the second number:");
+let second_input = Num->fromStr(IO->readLn());
+
+let result = once {
+    if operation == "+" {
+        first_input + second_input
+    }
+    if operation == "-" {
+        first_input - second_input
+    }
+    if operation == "*" {
+        first_input * second_input
+    }
+    if operation == "/" {
+        first_input / second_input
+    }
+};
+
+IO->printLn("Result: " + Num->toStr(result));
